@@ -1,0 +1,81 @@
+#root {
+  padding: 2rem;
+  text-align: center;
+  min-height: 100dvh;
+  min-width: 90dvw;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+}
+
+main>div>ul {
+  padding: 0;
+}
+
+main>div>ul>li {
+  font-size: larger;
+  padding: 8px 0;
+  list-style-type: none;
+}
+
+.animation-container {
+  width: 70dvw !important;
+  height: 90dvh !important;
+  max-width: 100dvw;
+  max-height: 100dvh;
+  margin: 0 auto;
+}
+
+.previous-experiences {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.experience {
+  border: 1px solid white;
+  padding: 8px;
+}
+
+.exp-intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exp-intro>button {
+  background: transparent;
+  border: 0;
+  width: 60px;
+}
+
+.exp-intro-text {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
+
+.exp-intro-text>p {
+  margin: 2px 0;
+}
+
+.expandable {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  
+  max-height: 0;
+  overflow-y: hidden;
+  transition: max-height 1s ease-out;
+}
+
+.expandable-show {
+  max-height: 1000px;
+  transition: max-height 1s ease-in;
+}
